@@ -1,4 +1,4 @@
-### How the Daily Commit Application Works
+### How the Daily Commit App Works:
 
 The **Daily Commit Application** consists of two main parts:
 
@@ -22,4 +22,3 @@ The **Daily Commit Application** consists of two main parts:
 3. **Commit to GitHub**: The service makes commits on GitHub repositories by calling the `CreateCommitUseCase`.
 4. **Error Handling**: The system handles errors such as invalid tokens, SHA conflicts, and repository errors.
 
-This approach ensures that commits are made periodically for active users, based on the data stored in Firestore and GitHub credentials.
