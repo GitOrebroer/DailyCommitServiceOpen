@@ -23,4 +23,11 @@ The **Daily Commit Application** consists of two main parts:
 4. **Error Handling**: The system handles errors such as invalid tokens, SHA conflicts, and repository errors.
 
 ## How to run:
-Credentials to firestore and to app insights should be provided. Update appsettings.json. You can easily find and change secret values by searching by keyword: `ADD YOUR CREDENTIALS`. If you have any problems DM me.
+Credentials to firestore and to app insights should be provided. Update appsettings.json. You can easily find and change secret values by searching by keyword: `ADD YOUR CREDENTIALS`.
+
+Update:
+- appsettings.json
+- DependencyInjectionInfra
+- CommiterHostedService `db = FirestoreDb.Create("ADD YOUR CREDENTIALS");`
+- Firebase-config.json
+- CreateCommitUseCase `var connection = new Connection(new ProductHeaderValue("ADD YOUR CREDENTIALS"));`
