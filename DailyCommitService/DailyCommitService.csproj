@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Marcin\.nuget\packages\system.diagnostics.diagnosticsource\9.0.2\contentFiles\any\net8.0\ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+	 <PackageReference Include="Google.Cloud.Firestore" Version="3.9.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="9.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Infrastracture\Infrastracture.csproj" />
+  </ItemGroup>
+
+</Project>
